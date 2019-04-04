@@ -31,6 +31,7 @@ Your instructor will provide you with a token to administer your namespace. In a
 Login with the either the CLI or UI and check out your namespace. You'll notice your tenant is completely isolated and you cannot interact with your neighbors tenant. You will see the namespace present in the token details.
 
 ```
+$ vault login -namespace trainer s.PYikHPQHZGOdTJe70EJ2Eu5H.mn7BX
 $ vault token lookup -namespace trainer s.PYikHPQHZGOdTJe70EJ2Eu5H.mn7BX | grep namespace_path
 namespace_path      trainer/
 ```
