@@ -40,7 +40,7 @@ namespace_path      trainer/
 Now we can mount a kv
 
 ```
-vault secrets enable -path=secret kv
+vault secrets enable -namespace trainer -path=secret kv
 ```
 
 Let's write a dummy secret to test our access:
